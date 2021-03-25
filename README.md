@@ -1,6 +1,9 @@
 # discord-api-bot : make testing discord api easier
 
-# global variable
+# global variables
+
+!r  discord_runner
+
 ```
 discord_runner: {
   bot_name,
@@ -10,3 +13,5 @@ discord_runner: {
   id // the id of the user who run a script
 }
 ```
+
+!r 
