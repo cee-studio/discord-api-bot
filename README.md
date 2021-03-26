@@ -1,17 +1,14 @@
 # discord-api-bot : make testing discord api easier
 
-# global variables
+# commands
 
-!r  discord_runner
-
+Display the information of discord user who run this command
 ```
-discord_runner: {
-  bot_name,
-  bot_id,
-  guild_id,
-  channel_id,
-  id // the id of the user who run a script
-}
+!r  runner
 ```
 
-!r 
+Display the discord user structure of whoever runs this command
+```
+!r  cee.get_user(runner.id)
+```
+
