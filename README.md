@@ -1,4 +1,4 @@
-# discord-api-bot : make testing discord api easier
+# Scripting Discord API in chat is fun
 
 # commands
 
