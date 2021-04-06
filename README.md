@@ -46,11 +46,11 @@ msgs[0];
 
 ```
 // Print out the autor of each message
-!r \`\`\`js
+!r ```js
   var msgs = cee.get_channel_messages(runner.channel_id);
   for (var i in msgs)
-    console.log(msgs[i].author.username)
-\`\`\`
+    console.log(msgs[i].author.username)```
+ 
 ```
 
 ## Get channel message
@@ -65,38 +65,43 @@ msgs[0];
 
 ## Create a reaction
 ```
-!r \`\`\`js
+!r ```js
 var heart = transformer.url_encode("❤️");
 cee.create_reaction(runner.channel_id, runner.message_id, heart);
-\`\`\`
+```
+
 ```
 
 
 ## Get all users who reaact to an emoji
 ```
-!r \`\`\`js
+!r ```js
 var play = transformer.url_encode("▶️");
 cee.get_reactions(runner.channel_id, runner.message_id, play);
-\`\`\`
+```
+
 ```
 
 ## Delete all reactions of a message
 ```
-!r \`\`\`js
+!r ```js
 cee.delete_all_reactions(runner.channel_id, runner.message_id)
-\`\`\`
+```
+
 ```
 
 ## Delete all reactions for an emoji
 ```
-!r \`\`\`js
+!r ```js
 var play = transformer.url_encode("▶️");
 cee.delete_all_reactions_for_emoji (runner.channel_id, runner.message_id, play);
-\`\`\`
+```
+
 ```
 
 ## Edit a message
-``` 
+```
+
 !r ```js
 cee.edit_message(runner.channel_id, runner.message_id, { content: "!r console.log(1)" });```
 
@@ -104,7 +109,8 @@ cee.edit_message(runner.channel_id, runner.message_id, { content: "!r console.lo
 
 ## Delete a message
 ```
-!r \`\`\`js
-cee.delete_message(runner.channel_id, runner.message_id);
-\`\`\`
+
+!r ```js
+cee.delete_message(runner.channel_id, runner.message_id);```
+
 ```
