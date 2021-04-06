@@ -83,8 +83,7 @@ cee.get_reactions(runner.channel_id, runner.message_id, play);```
 ## Delete all reactions of a message
 ```
 !r ```js
-cee.delete_all_reactions(runner.channel_id, runner.message_id)
-```
+cee.delete_all_reactions(runner.channel_id, runner.message_id)```
 
 ```
 
@@ -92,8 +91,7 @@ cee.delete_all_reactions(runner.channel_id, runner.message_id)
 ```
 !r ```js
 var play = transformer.url_encode("▶️");
-cee.delete_all_reactions_for_emoji (runner.channel_id, runner.message_id, play);
-```
+cee.delete_all_reactions_for_emoji (runner.channel_id, runner.message_id, play);```
 
 ```
 
