@@ -67,8 +67,7 @@ msgs[0];
 ```
 !r ```js
 var heart = transformer.url_encode("❤️");
-cee.create_reaction(runner.channel_id, runner.message_id, heart);
-```
+cee.create_reaction(runner.channel_id, runner.message_id, heart);```
 
 ```
 
