@@ -1,4 +1,16 @@
 # Scripting Discord API in chat is fun
+## Invite links
+
+* invite me as JS script eval bot      [link](https://bit.ly/stensal)
+  You can run pure JS scripts with limited capability to access Discord APIs
+  
+* invite me to manage message [link](https://bit.ly/38LFRrS)
+  Give the bot the permission to manage your server's message, you can script them
+
+* invite me as admin          [link](https://bit.ly/3fN0NmD)
+  Give the bot the admin permission, so you can script all you can do manually.
+  This is risky, please invite to your test servers only.
+    
 
 ## Commands
 ### Run a script in JS (ES5) Syntax
