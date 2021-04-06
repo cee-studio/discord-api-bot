@@ -76,8 +76,7 @@ cee.create_reaction(runner.channel_id, runner.message_id, heart);```
 ```
 !r ```js
 var play = transformer.url_encode("▶️");
-cee.get_reactions(runner.channel_id, runner.message_id, play);
-```
+cee.get_reactions(runner.channel_id, runner.message_id, play);```
 
 ```
 
