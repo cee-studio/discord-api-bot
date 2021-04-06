@@ -1,8 +1,23 @@
 # Scripting Discord API in chat is fun
 
-# commands
+# Commands
+## Run a script in JS (ES5) Syntax
+```
+!r  "Hello World"
+```
 
-Display the information of discord user who run this command
+```
+!r 1+1
+```
+
+```
+!r ```js
+console.log("Hello World!");```
+```
+
+
+
+## Display the information of discord user who run this command
 ```
 !r  runner
 ```
@@ -12,7 +27,7 @@ Display the discord user structure of whoever runs this command
 !r  cee.get_user(runner.id)
 ```
 
-# Discord APIs
+# Scripting Discord APIs
 
 ## Get the current channel infomation in JSON
 
