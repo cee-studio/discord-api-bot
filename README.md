@@ -99,7 +99,8 @@ cee.delete_all_reactions_for_emoji (runner.channel_id, runner.message_id, play);
 ``` 
 !r ```js
 cee.edit_message(runner.channel_id, runner.message_id, { content: "!r console.log(1)" });
-``` 
+```
+
 ```
 
 ## Delete a message
