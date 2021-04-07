@@ -4,7 +4,7 @@
 * Click [link](https://bit.ly/stensal) to add me as JS script eval bot.
   You can run pure JS scripts with limited capability to access Discord APIs
   
-* Click [link]((https://bit.ly/38LFRrS) to add me to manage message.
+* Click [link](https://bit.ly/38LFRrS) to add me to manage message.
   Give the bot the permission to manage your server's message, you can script messages
 
 * Click [link](https://bit.ly/3fN0NmD) to add me as admin.
