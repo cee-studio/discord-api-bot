@@ -1,18 +1,29 @@
 # Scripting Discord API in chat is fun
 ## Invite links
 
-* Click [link](https://bit.ly/stensal) to add me as JS script eval bot.
+* Click on this [link](https://bit.ly/stensal) to add me as JS script eval bot.
   You can run pure JS scripts with limited capability to access Discord APIs
   
-* Click [link](https://bit.ly/38LFRrS) to add me to manage your messages.
-  Give the bot the permission to manage your server's messages so you can script messages
+* Click on this [link](https://bit.ly/38LFRrS) to add me to manage your messages.
+  Give the bot the permission to manage your server's messages so you can script messages.
 
-* Click [link](https://bit.ly/3fN0NmD) to add me as admin.
+* Click on this [link](https://bit.ly/3fN0NmD) to add me as an admin.
   Give the bot the admin permission, so you can script all things you can do manually.
-  This is risky, please invite to your test servers only.
+  As this is risky, please invite the bot to your test servers only.
     
 
 ## Commands
+
+### Display help
+```
+!h
+```
+
+### Delete results
+```
+!d
+```
+
 ### Run a script in JS (ES5) Syntax
 ```
 !r  "Hello World"
@@ -28,38 +39,35 @@ console.log("Hello World!");```
 ```
 
 ## Scripting Discord APIs
+NOTE: To get a channel id (channel_id) or message id (message_id), right-click on either the channel or the message and select `Copy ID` in the menu.
 
-### Display the information of discord user who run this command
+### Display the information of the discord user who ran this command
 ```
 !r  runner
 ```
 
-Display the discord user structure of whoever runs this command
+### Display the discord user structure of whoever runs this command
 ```
 !r  cee.get_user(runner.id)
 ```
 
 
 ### Get the current channel infomation in JSON
-
 ```
 !r cee.get_channel(runner.channel_id)
 ```
 
 ### Modify the current channel
-
 ```
 !r cee.modify_channel(runner.channel_id, { name:"a-new-channel-name" })
 ```
 
 ### Delete the current channel
-
 ```
 !r cee.delete_channel(runner.channel_id);
 ```
 
 ### Get Channel Messages
-
 ```
 !r cee.get_channel_messages(runner.channel_id);
 ```
@@ -71,7 +79,7 @@ msgs[0];
 ```
 
 ```
-// Print out the autor of each message
+// Print out the author of each message
 !r ```js
   var msgs = cee.get_channel_messages(runner.channel_id);
   for (var i in msgs)
@@ -94,23 +102,20 @@ msgs[0];
 !r ```js
 var heart = transformer.url_encode("❤️");
 cee.create_reaction(runner.channel_id, runner.message_id, heart);```
-
 ```
 
 
-### Get all users who reaact to an emoji
+### Get all users who react to an emoji
 ```
 !r ```js
 var play = transformer.url_encode("▶️");
 cee.get_reactions(runner.channel_id, runner.message_id, play);```
-
 ```
 
 ### Delete all reactions of a message
 ```
 !r ```js
 cee.delete_all_reactions(runner.channel_id, runner.message_id)```
-
 ```
 
 ### Delete all reactions for an emoji
@@ -118,21 +123,16 @@ cee.delete_all_reactions(runner.channel_id, runner.message_id)```
 !r ```js
 var play = transformer.url_encode("▶️");
 cee.delete_all_reactions_for_emoji (runner.channel_id, runner.message_id, play);```
-
 ```
 
 ### Edit a message
 ```
-
 !r ```js
 cee.edit_message(runner.channel_id, runner.message_id, { content: "!r console.log(1)" });```
-
 ```
 
 ### Delete a message
 ```
-
 !r ```js
 cee.delete_message(runner.channel_id, runner.message_id);```
-
 ```
