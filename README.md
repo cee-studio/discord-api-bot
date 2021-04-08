@@ -109,7 +109,9 @@ cee.create_reaction(runner.channel_id, runner.message_id, heart);```
 ```
 !r ```js
 var play = transformer.url_encode("▶️");
-cee.get_reactions(runner.channel_id, runner.message_id, play);```
+var users = cee.get_reactions(runner.channel_id, runner.message_id, play);
+for (var i in users)
+  console.log(users[i]);```
 ```
 
 ### Delete all reactions of a message
@@ -128,11 +130,69 @@ cee.delete_all_reactions_for_emoji (runner.channel_id, runner.message_id, play);
 ### Edit a message
 ```
 !r ```js
-cee.edit_message(runner.channel_id, runner.message_id, { content: "!r console.log(1)" });```
+cee.edit_message(runner.channel_id, <message_id>, { content: "!r console.log(1)" });```
 ```
 
 ### Delete a message
 ```
 !r ```js
 cee.delete_message(runner.channel_id, runner.message_id);```
+```
+
+### Bulk delete messages
+```
+
+!r ```js
+cee.bulk_delete_messages(runner.channel_id, [<message-ids>]);```
+
+```
+
+### Edit Channel Permissions
+```
+
+!r ```js
+cee.edit_channel_permissions(runner.channel_id, overwrite_id, params);```
+
+```
+
+
+### Get Channel Invites
+```
+
+!r ```js
+cee.get_channel_invites(runner.channel_id);```
+
+```
+
+## Trigger Typing Indicator
+```
+!r cee.trigger_typing_indicator(runner.channel_id);
+```
+
+## Get Guild Channels
+```
+!r ```js
+var l = cee.get_guild_channels(runner.guild_id);
+for(var i in l)
+  console.log(l[i]);```
+
+
+!r ```js
+var l = cee.get_guild_channels(runner.guild_id);
+for(var i in l)
+  console.log(l[i].name + ":" + l[i].type);```
+
+```
+
+## Create guild channel
+```
+!r ```js
+cee.create_guild_channel(runner.guild_id, { name:"a-new-channel" });```
+```
+
+## List guild members
+```
+!r  ```js
+cee.list_guild_members(runner.guild_id);```
+
 ```
