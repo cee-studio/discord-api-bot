@@ -1,5 +1,7 @@
 # Programmable Discord Bot
-The most intuitive and hassle-free way to program a Discord Bot
+A intuitive and hassle-free way to program a Discord Bot.
+1. Zero setup
+2. Script Discord APIs in chat
 
 ## Invite links
 
