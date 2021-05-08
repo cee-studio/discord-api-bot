@@ -120,8 +120,7 @@ for (var i in users)
 
 ### Delete all reactions of a message
 ```
-!r ```js
-cee.delete_all_reactions(runner.channel_id, runner.message_id)```
+!r cee.delete_all_reactions(runner.channel_id, runner.message_id)
 ```
 
 ### Delete all reactions for an emoji
@@ -133,39 +132,28 @@ cee.delete_all_reactions_for_emoji (runner.channel_id, runner.message_id, play);
 
 ### Edit a message
 ```
-!r ```js
-cee.edit_message(runner.channel_id, <message_id>, { content: "!r console.log(1)" });```
+!r cee.edit_message(runner.channel_id, <message_id>, { content: "!r console.log(1)" });
 ```
 
 ### Delete a message
 ```
-!r ```js
-cee.delete_message(runner.channel_id, runner.message_id);```
+!r cee.delete_message(runner.channel_id, runner.message_id);
 ```
 
 ### Bulk delete messages
 ```
-
-!r ```js
-cee.bulk_delete_messages(runner.channel_id, [<message-ids>]);```
-
+!r cee.bulk_delete_messages(runner.channel_id, [<message-ids>]);
 ```
 
 ### Edit Channel Permissions
 ```
-
-!r ```js
-cee.edit_channel_permissions(runner.channel_id, overwrite_id, params);```
-
+!r cee.edit_channel_permissions(runner.channel_id, overwrite_id, params);
 ```
 
 
 ### Get Channel Invites
 ```
-
-!r ```js
-cee.get_channel_invites(runner.channel_id);```
-
+!r cee.get_channel_invites(runner.channel_id);
 ```
 
 ## Trigger Typing Indicator
@@ -190,13 +178,10 @@ for(var i in l)
 
 ## Create guild channel
 ```
-!r ```js
-cee.create_guild_channel(runner.guild_id, { name:"a-new-channel" });```
+!r cee.create_guild_channel(runner.guild_id, { name:"a-new-channel" });
 ```
 
 ## List guild members
 ```
-!r  ```js
-cee.list_guild_members(runner.guild_id);```
-
+!r  cee.list_guild_members(runner.guild_id);
 ```
