@@ -1,4 +1,6 @@
-# Scripting Discord API in chat is fun
+# Programmable Discord Bot
+The most intuitive and hassle-free way to program a Discord Bot
+
 ## Invite links
 
 * Click on this [link](https://bit.ly/stensal) to add me as JS script eval bot.
